@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import WrappedComponent from "./demoWrap";
 import WrappedStorageComponent from "./wrapperStorage";
+import reverseHOC from './withReverseHOCclass';
 
 
 function App() {
