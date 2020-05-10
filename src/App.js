@@ -3,7 +3,8 @@ import './App.css';
 // import WrappedComponent from "./demoWrap";
 // import WrappedStorageComponent from "./wrapperStorage";
 // import reverseHOC from './withReverseHOCclass';
-import WrapperDatafetch from './WrapperDatafetch';
+// import WrapperDatafetch from './WrapperDatafetch';
+import WrapperDataFetchHook from './WrapperDataFetchHook';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <header className="App-header">
         {/* <WrappedComponent /> */}
         {/* <WrappedStorageComponent reallyLongApiCall={reallyLongApiCall} /> */}
-        <WrapperDatafetch />
+        {/* <WrapperDatafetch /> */}
+        <WrapperDataFetchHook />
       </header>
     </div>
   );
