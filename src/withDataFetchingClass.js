@@ -37,13 +37,20 @@ const withDataFetchingClass = props => WrappedComponent => {
 
 
         render() {
+            const { results, loading, error } = this.state;
+
             return (
-                <WrappedComponent />
+                <WrappedComponent
+                    results={results}
+                    loading={loading}
+                    error={error}
+                    {...this.props}
+                />
             );
         }
     }
 
-    WithDataFetching.displayName = `WithDataFetching(${WrappedComponent.name})`;
+    withDataFetchingClass.displayName = `WithDataFetching(${WrappedComponent.name})`;
 
     return withDataFetchingClass;
 };
